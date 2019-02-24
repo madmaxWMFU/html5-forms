@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(236, 238, 244);
+}
+
+.container-form {
+    margin: 90px 60px;
+
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
