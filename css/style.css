@@ -1,10 +1,167 @@
 body {
     background-color: rgb(236, 238, 244);
+    font-family: sans-serif;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px;
+}
+
+.logo-form {
+    background-image: url(../img/logo-form.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+}
+
+.text-color {
+    color: rgb(165, 171, 197);
+    font-weight: bold;
+}
+
+.button-header {
+    background-color: rgb(236, 238, 244);
+    border: 1px solid rgb(206, 213, 228);
+    border-radius: 5px;
+    height: 55px;
+    width: 140px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.button-header:hover {
+    border: 1px solid #6f7692;
+}
+
+.button-header>.fas:first-child {
+    margin-right: 15px;
 }
 
 .container-form {
-    margin: 90px 60px;
-
-    height: 100px;
+    margin: 60px 60px;
+    height: auto;
     background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(202, 209, 225);
+    border-radius: 5px;
+}
+
+.order-information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(221, 225, 236);
+}
+
+.user-order {
+    display: flex;
+    width: 73%;
+    border-right: 1px solid rgb(221, 225, 236);
+}
+
+.order-left {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 40px 0px 50px 100px;
+}
+
+.fa-clipboard {
+    margin-left: -40px;
+    margin-right: 15px;
+}
+
+.order-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 145px 0px 0px;
+}
+
+.order-data-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-data-item>span:first-child {
+    margin-bottom: 5px;
+}
+
+.order-data-item>span:last-child {
+    color: rgb(165, 171, 197);
+}
+
+.order-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 30px;
+    width: 20%;
+}
+
+.button-form {
+    width: 180px;
+    height: 60px;
+    background-color: rgb(236, 238, 244);
+    border: 1px solid rgb(206, 213, 228);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-form:hover {
+    border: 1px solid #6f7692;
+}
+
+.submit-form {
+    background-color: rgb(95, 202, 198);
+}
+
+.submit-form>span {
+    color: rgb(254, 254, 254);
+}
+
+.help-center {
+    width: 20%;
+    padding: 30px 30px 30px 60px;
+}
+
+.fa-life-ring {
+    margin-left: -41px;
+    margin-right: 15px;
+}
+
+.center-phone {
+    margin-right: 15px;
+}
+
+.contact-text {
+    color: rgb(168, 167, 187);
+}
+
+.selections {
+    border: none;
+    margin: 0 130px;
+}
+
+.first-selection {
+    text-align: center;
+    padding: 110px 0px;
+}
+
+.first-selection>h3 {
+    letter-spacing: 3px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(215, 216, 224);
+    padding-bottom: 10px;
+    width: 500px;
+    color: rgb(110, 117, 149);
+}
+
+.check-items-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
 }

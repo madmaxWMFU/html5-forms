@@ -1,23 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML5 form</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
-
+        <div class="container-header">
+            <button class="button-header">
+                <span class="fas fa-long-arrow-alt-left text-color"></span>
+                <span class="text-color">GO BACK</span>
+            </button>
+            <div class="logo-form"></div>
+            <button class="button-header">
+                <span class="fas fa-user text-color"></span>
+                <span class="text-color">SIGN IN</span>
+            </button>
+        </div>
     </header>
     <main>
         <div class="container-form">
-            
+            <div class="order-information">
+                <div class="user-order">
+                    <div class="order-left">
+                        <div class="order-caption">
+                            <span class="fas fa-clipboard fa-lg text-color"></span>
+                            <span class="text-color">YOUR ORDER</span>
+                        </div>
+                        <div class="order-data">
+                            <div class="order-data-item">
+                                <span class="text-color">ITEMS</span>
+                                <span>2 documents</span>
+                            </div>
+                            <div class="order-data-item">
+                                <span class="text-color">DETAILS</span>
+                                <span>2 languages</span>
+                            </div>
+                            <div class="order-data-item">
+                                <span class="text-color">PRICE</span>
+                                <span>$ 696,06</span>
+                            </div>
+                            <div class="order-data-item">
+                                <span class="text-color">DELIVERY</span>
+                                <span>48 hours<sup>*</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-right">
+                        <button class="button-form submit-form"><span class="text-color">PLACE ORDER</span></button>
+                        <button class="button-form"><span class="text-color">PRINT A QUOTE</span></button>
+                    </div>
+                </div>
+                <div class="help-center">
+                    <div>
+                        <span class="far fa-life-ring fa-lg text-color"></span>
+                        <span class="text-color">HELP CENTER</span>
+                    </div>
+                    <div>
+                        <p class="contact-text">If you need assistance while palcing your order, contact one of our beloved Project Manager by phone or email.</p>
+                    </div>
+                    <div>
+                        <span class="text-color center-phone">+971 (0) 555 55 55</span>
+                        <span class="text-color center-mail">help@qtest.com</span>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <form>
+                    <fieldset class="selections first-selection">
+                        <h3>SELECT WHAT YOU WANT TO TRANSLATE</h3>
+                        <div class="check-items-box">
+                            <div>
+                                <input type="radio" name="change-type" id="website" value="Website">
+                            </div>
+                            <div>
+                                <input type="radio" name="change-type" id="document" value="Documents">
+                            </div>
+                            <div>
+                                <input type="radio" name="change-type" id="account" value="Social Ac">
+                            </div>
+                        </div>
+
+                    </fieldset>
+                    <fieldset class="selections second-selection">
+
+                    </fieldset>
+                    <fieldset class="selections third-selection">
+
+                    </fieldset>
+                    <fieldset class="selections fourth-selection">
+
+                    </fieldset>
+                    <fieldset class="selections fifth-selection">
+
+                    </fieldset>
+                    <fieldset class="selections sixth-selection">
+
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
-
-    </footer>   
+        <a></a>
+    </footer>
 </body>
+
 </html>
