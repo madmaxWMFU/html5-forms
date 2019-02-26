@@ -26,36 +26,34 @@
     </header>
     <main>
         <div class="container-form">
-            <div class="order-information">
-                <div class="user-order">
-                    <div class="order-left">
-                        <div class="order-caption">
-                            <span class="fas fa-clipboard fa-lg text-color"></span>
-                            <span class="text-color">YOUR ORDER</span>
+            <section class="order-information">
+                <div class="user-order-left">
+                    <div class="order-caption">
+                        <span class="fas fa-clipboard fa-lg text-color"></span>
+                        <span class="text-color">YOUR ORDER</span>
+                    </div>
+                    <div class="order-data">
+                        <div class="order-data-item">
+                            <span class="text-color">ITEMS</span>
+                            <span>2 documents</span>
                         </div>
-                        <div class="order-data">
-                            <div class="order-data-item">
-                                <span class="text-color">ITEMS</span>
-                                <span>2 documents</span>
-                            </div>
-                            <div class="order-data-item">
-                                <span class="text-color">DETAILS</span>
-                                <span>2 languages</span>
-                            </div>
-                            <div class="order-data-item">
-                                <span class="text-color">PRICE</span>
-                                <span>$ 696,06</span>
-                            </div>
-                            <div class="order-data-item">
-                                <span class="text-color">DELIVERY</span>
-                                <span>48 hours<sup>*</sup></span>
-                            </div>
+                        <div class="order-data-item">
+                            <span class="text-color">DETAILS</span>
+                            <span>2 languages</span>
+                        </div>
+                        <div class="order-data-item">
+                            <span class="text-color">PRICE</span>
+                            <span>$ 696,06</span>
+                        </div>
+                        <div class="order-data-item">
+                            <span class="text-color">DELIVERY</span>
+                            <span>48 hours<sup>*</sup></span>
                         </div>
                     </div>
-                    <div class="order-right">
-                        <button class="button-form submit-form"><span class="text-color">PLACE ORDER</span></button>
-                        <button class="button-form"><span class="text-color">PRINT A QUOTE</span></button>
-                    </div>
+                </div>
+                <div class="user-order-right">
+                    <button class="button-form submit-form"><span class="text-color">PLACE ORDER</span></button>
+                    <button class="button-form"><span class="text-color">PRINT A QUOTE</span></button>
                 </div>
                 <div class="help-center">
                     <div>
@@ -69,28 +67,53 @@
                         <span class="text-color center-phone">+971 (0) 555 55 55</span>
                         <span class="text-color center-mail">help@qtest.com</span>
                     </div>
-
                 </div>
-            </div>
-            <div>
-                <form>
+            </section>
+            <section class="form-information">
+                <form action="#" method="GET">
                     <fieldset class="selections first-selection">
-                        <h3>SELECT WHAT YOU WANT TO TRANSLATE</h3>
+                        <h2>SELECT WHAT YOU WANT TO TRANSLATE</h2>
                         <div class="check-items-box">
-                            <div>
-                                <input type="radio" name="change-type" id="website" value="Website">
-                            </div>
-                            <div>
-                                <input type="radio" name="change-type" id="document" value="Documents">
-                            </div>
-                            <div>
-                                <input type="radio" name="change-type" id="account" value="Social Ac">
-                            </div>
+                            <label for="website" class="item-radio item-website">
+                                    <input type="radio" name="change-type" id="website" value="Website">
+                                    <span class="item-checked"></span>
+                                    <span class="item-text">Website</span>
+                            </label>
+                            <label for="document" class="item-radio item-document">
+                                    <input type="radio" name="change-type" id="document" value="Documents">
+                                    <span class="item-checked"></span>
+                                    <span class="item-text">Documents</span>
+                                </label>
+                            <label for="account" class="item-radio item-account">
+                                    <input type="radio" name="change-type" id="account" value="Social Account">
+                                    <span class="item-checked"></span>
+                                    <span class="item-text">Social Account</span>
+                            </label>
                         </div>
-
                     </fieldset>
                     <fieldset class="selections second-selection">
-
+                        <h3>Upload your documents <span>(Doc, Docx, Text, PDF, Markdown)</span></h3>
+                        <input type="file" id="data-file">
+                        <div class="files-information">
+                            <div class="files-table">
+                                <div><span class="text-color">FILE NAME</span></div>
+                                <div><span class="text-color">FILE SIZE</span></div>
+                                <div><span class="text-color">NUMBER OF WORDS</span></div>
+                                <div><span class="text-color">REMOVE</span></div>
+                            </div>
+                            <div class="files-table">
+                                <div><span class="fas fa-file"></span><span>business_operation.docx</span></div>
+                                <div><span>78kb</span></div>
+                                <div><span>842</span></div>
+                                <div><span class="fas fa-trash-alt"></span></div>
+                            </div>
+                            <div class="files-table">
+                                <div><span class="fas fa-file"></span><span>business_operation.docx</span></div>
+                                <div><span>26kb</span></div>
+                                <div><span>2.326</span></div>
+                                <div><span class="fas fa-trash-alt"></span></div>
+                            </div>
+                        </div>
                     </fieldset>
                     <fieldset class="selections third-selection">
 
@@ -105,7 +128,7 @@
 
                     </fieldset>
                 </form>
-            </div>
+            </section>
         </div>
     </main>
     <footer>
