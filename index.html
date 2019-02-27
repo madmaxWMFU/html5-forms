@@ -92,37 +92,82 @@
                         </div>
                     </fieldset>
                     <fieldset class="selections second-selection">
-                        <h3>Upload your documents <span>(Doc, Docx, Text, PDF, Markdown)</span></h3>
-                        <input type="file" id="data-file">
+                        <h3 class="first-form-title">Upload your documents <span>(Doc, Docx, Text, PDF, Markdown)</span></h3>
+                        <label for="data-file" class="label-data-file">
+                            <span class="fas fa-cloud-upload-alt"></span>
+                            <span>Upload a new file</span>
+                        </label>
+                        <input type="file" id="data-file" class="data-file" accept="image/*" multiple="">
                         <div class="files-information">
-                            <div class="files-table">
-                                <div><span class="text-color">FILE NAME</span></div>
-                                <div><span class="text-color">FILE SIZE</span></div>
-                                <div><span class="text-color">NUMBER OF WORDS</span></div>
-                                <div><span class="text-color">REMOVE</span></div>
-                            </div>
-                            <div class="files-table">
-                                <div><span class="fas fa-file"></span><span>business_operation.docx</span></div>
-                                <div><span>78kb</span></div>
-                                <div><span>842</span></div>
-                                <div><span class="fas fa-trash-alt"></span></div>
-                            </div>
-                            <div class="files-table">
-                                <div><span class="fas fa-file"></span><span>business_operation.docx</span></div>
-                                <div><span>26kb</span></div>
-                                <div><span>2.326</span></div>
-                                <div><span class="fas fa-trash-alt"></span></div>
-                            </div>
+                            <table class="data-table">
+                                <thead class="data-table-head">
+                                    <tr>
+                                        <th>FILE NAME</th>
+                                        <th>FILE SIZE</th>
+                                        <th>NUMBER OF WORDS</th>
+                                        <th>REMOVE</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="data-table-body">
+                                    <tr>
+                                        <td><span class="fas fa-file-alt"></span>business_operation.docx</td>
+                                        <td>78kb</td>
+                                        <td>842</td>
+                                        <td><span class="fas fa-trash-alt"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="fas fa-file-alt"></span>business_operation.docx</td>
+                                        <td>26kb</td>
+                                        <td>2.326</td>
+                                        <td><span class="fas fa-trash-alt"></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </fieldset>
                     <fieldset class="selections third-selection">
-
+                        <h3 class="second-form-title">Choose your languages pairings</h3>
+                        <div class="select">
+                            <label for="selectFrom">From</label>
+                            <div class="select_language">
+                                <select name="language" id="selectFrom" class="select-items" required="">
+                                    <option value="none">Choose language</option>
+                                    <option value="english" selected="">English</option>
+                                    <option value="arabic">Arabic</option>
+                                    <option value="kurdish">Kurdish</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="select">
+                            <label for="selectTo">To</label>
+                            <div class="select_language">
+                                <select name="language" id="selectTo" class="select-items" required="">
+                                    <option value="none">Choose language</option>
+                                    <option value="english">English</option>
+                                    <option value="arabic" selected="">Arabic</option>
+                                    <option value="kurdish">Kurdish</option>
+                                </select>
+                            </div>
+                            <div class="select_language">
+                                <label class="caret-down">
+                                    <select name="language" class="select-items">
+                                        <option value="none">Choose language</option>
+                                        <option value="english">English</option>
+                                        <option value="arabic">Arabic</option>
+                                        <option value="kurdish" selected="">Kurdish</option>
+                                    </select>                                   
+                                </label>
+                            </div>
+                            <span class="fas fa-trash-alt"></span>
+                            <button type="button" class="select-btn-add">+ ADD</button>
+                        </div>
                     </fieldset>
                     <fieldset class="selections fourth-selection">
-
+                        <h3 class="third-form-title">Select your desired tone</h3>
+                        <h3 class="fourth-form-title">Tell us how urgent this job is</h3>
                     </fieldset>
                     <fieldset class="selections fifth-selection">
-
+                        <h3 class="fifth-form-title">Sign up and choose a payment method</h3>
                     </fieldset>
                     <fieldset class="selections sixth-selection">
 
