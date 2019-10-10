@@ -368,7 +368,7 @@ tr>th, tr>td {
     margin-bottom: 10px;
 }
 
-.data-table td, .data-table tr {
+.data-table td, .data-table th {
     padding: 15px 0px 0px 33px;
 }
 
@@ -500,7 +500,7 @@ tr>th, tr>td {
 }
 
 footer {
-    background-color: #444a62;
+    background-color: #384764;
 }
 
 .footer-wrap {
@@ -511,6 +511,100 @@ footer {
 }
 
 .footer-wrap> div {
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 200px;
+}
+
+.footer-wrap-item>h2 {
+    font-size: 19px;
+}
+
+.footer-wrap-item>h2, .networks>p, .footer-wrap-item>p {
+    color: #818bab;
+}
+
+.about+p {
+    font-style: italic;
+}
+
+.about::before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f004";
+    position: absolute;
+    left: -41px;
+    top: -3px;
+    width: 42px;
+    height: 42px;
+    font-weight: normal;
+    font-size: 21px;    
+}
+
+.contacts::before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f14e";
+    position: absolute;
+    left: -41px;
+    top: -3px;
+    width: 42px;
+    height: 42px;
+    font-weight: normal;
+    font-size: 21px;
+}
+
+.social::before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f1e0";
+    position: absolute;
+    left: -41px;
+    top: -3px;
+    width: 42px;
+    height: 42px;
+    font-size: 21px;    
+}
+
+.networks {
+    padding-left: 20px; 
+    position: relative;
+}
+
+.facebook::before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f39e";
+    /*content: "\f09a";*/
+    position: absolute;
+    left: 0px;
+    top: -3px;
+    width: 42px;
+    height: 42px;
+    font-weight: normal;
+    font-size: 21px;    
+}
+
+.twitter::before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f099";
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 42px;
+    height: 42px;
+    font-weight: normal;
+    font-size: 21px;    
+}
+
+.linkedin::before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f0e1";
+    position: absolute;
+    left: 0px;
+    top: 64px;
+    width: 42px;
+    height: 42px;
+    font-weight: normal;
+    font-size: 21px;    
+}
+
+.footer-logo {
+    width: 70%;
+    padding-top: 10px;
 }
